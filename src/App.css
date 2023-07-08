@@ -1,38 +1,246 @@
-.App {
-  text-align: center;
+body {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* .App {
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 20px;
+  justify-items: center;
+} */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section-top {
+  max-width: 60%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 16px 0;
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.header-logo {
+  width: 160px;
+  height: 40px;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav a {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.main {
+  width: 100%;
+}
+
+.banner {
+  display: grid;
+  place-items: center;
+  background-color: #495E57;
+  position: relative;
+}
+
+.banner-content {
+  max-width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 70%;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.banner-text h2 {
+  margin: 0 0 16px 0;
+}
+
+.banner-text p {
+  margin: 24px 0;
+}
+
+.banner-title {
+  color: #F4CE14;
+  margin: 0;
+}
+
+.banner-button {
+  background-color: #F4CE14;
+  color: #000000;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+.banner-image {
+  max-height: 300px;
+  width: 40%;
+  border-radius: 20px;
+  justify-self: end;
+  margin-bottom: -80px;
+  position: relative;
+  z-index: 1;
+}
+
+.section {
+  display: grid;
+  place-items: center;
+  margin: 60px 0 30px 0;
+}
+
+.section-content {
+  max-width: 60%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.section h2 {
+  font-size: 32px;
+  justify-self: baseline;
+}
+
+.section-button {
+  background-color: #F4CE14;
+  color: #000000;
+  justify-self: end;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  grid-gap: 20px;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 1fr;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+
+}
+
+.card-image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 0 20px;
+}
+
+.card-title {
+  margin: 10px 0 0;
+}
+
+.card-price {
+  color: orange;
+  margin: 10px 0 0;
+}
+
+.card-description {
+  margin: 30px 0;
+  padding: 20px;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  padding: 0px 20px 20px 20px;
+}
+
+.card-footer-text {
+  margin-right: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.card-footer-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  background-color: #495E57;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 120px;
+  padding: 40px 0;
+}
+
+.footer p {
+  margin: 16px;
+}
+
+@media (max-width: 768px) {
+  .section-top {
+    max-width: 90%;
+    flex-wrap: wrap;
   }
-  to {
-    transform: rotate(360deg);
+
+  .header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .banner-content,
+  .section-content,
+  .card-container {
+    max-width: 80%;
+  }
+
+  .banner-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .banner-content p {
+    text-align: left;
+  }
+
+  .banner-image {
+    width: 80%;
+    margin: 40px auto 20px;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
   }
 }

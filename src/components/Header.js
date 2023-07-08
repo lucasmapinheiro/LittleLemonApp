@@ -1,10 +1,12 @@
+import React from 'react';
+import logo from '../images/littlelemonlogo.png';
 
 function Header() {
-    return (
-        <header>
-            <img src="/public/725cbe0ca5da8536fc99c51e00d4d13628bd9745.png" alt="Logo" />
-        </header>
-    );
+  return (
+    <div className="header">
+      <img src={logo} alt="Restaurante Logo" className="header-logo" />
+    </div>
+  );
 }
 
 export default Header;
