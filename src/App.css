@@ -98,18 +98,12 @@ body {
 }
 
 .section {
-  display: grid;
-  place-items: center;
-  margin: 60px 0 30px 0;
-}
-
-.section-content {
   max-width: 60%;
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  margin: 56px auto 30px;
 }
 
 .section h2 {
@@ -218,10 +212,11 @@ body {
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 16px auto;
   }
 
   .banner-content,
-  .section-content,
+  .section,
   .card-container {
     max-width: 80%;
   }
@@ -240,7 +235,22 @@ body {
     margin: 40px auto 20px;
   }
 
+  .section {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin: 40px auto;
+  }
+  .section h2 {
+    margin-top: 0;
+  }
+
   .card-container {
     grid-template-columns: 1fr;
+  }
+
+  .footer {
+    margin: 48px auto 0;
   }
 }

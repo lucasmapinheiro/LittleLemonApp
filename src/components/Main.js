@@ -20,10 +20,8 @@ function Main() {
       </div>
 
       <div className="section">
-        <div className="section-content">
-            <h2>This weeks specials!</h2>
-            <button className="section-button">Online Menu</button>
-        </div>
+        <h2>This weeks specials!</h2>
+        <button className="section-button">Online Menu</button>
       </div>
 
       <div className="card-container">
