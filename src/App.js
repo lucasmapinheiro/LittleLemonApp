@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Nav from './components/Nav';
 import Main from './components/Main';
 import Footer from './components/Footer';
-import BookingForm from './components/BookingForm';
+import BookingForm from './components/BookingPage';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('main');
@@ -12,7 +12,7 @@ function App() {
   let currentComponent;
   if (currentPage === 'main') {
     currentComponent = <Main />;
-  } else if (currentPage === 'bookingForm') {
+  } else if (currentPage === 'bookingPage') {
     currentComponent = <BookingForm />;
   }
 

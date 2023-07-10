@@ -17,7 +17,7 @@ function Nav({ setCurrentPage }) {
             <Link
                 to="/reservations"
                 className="nav-item"
-                onClick={() => setCurrentPage('bookingForm')}
+                onClick={() => setCurrentPage('bookingPage')}
             >
                 Reservations
             </Link>
